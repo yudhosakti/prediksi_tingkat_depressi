@@ -3,15 +3,12 @@
 Here's our first attempt at using data to create a table:
 """
 
-import joblib
+import pickle
 import streamlit as st
 import pandas as pd
-import os
-import numpy as np
-import altair as alt
 import matplotlib.pyplot as plt
 
-model = joblib.load(open('depression_model.sav', 'rb'))
+model = pickle.load(open('depression_model.sav','rb'))
 
 st.title('Prediksi Tingkat Depresi Siswa')
 
