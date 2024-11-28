@@ -8,7 +8,7 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
-model = joblib.load(open('depression_model.sav','rb'))
+model = joblib.load('depression_model.sav')
 
 st.title('Prediksi Tingkat Depresi Siswa')
 
